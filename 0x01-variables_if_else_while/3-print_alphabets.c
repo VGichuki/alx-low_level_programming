@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -10,13 +8,14 @@
 
 int main(void)
 {
-	char low;
+	char alp[52]="abcderfghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (low = 'a'; low <= 'z'; low++);
-	putchar(low);
+	for (i = 0; i < 52; i++);
+	{
+		putchar(alp[i]);
+	}
 
-	for (low = 'A'; low <= 'Z'; low++);
-	putchar(low);
 	putchar('\n');
 	return (0);
 }
