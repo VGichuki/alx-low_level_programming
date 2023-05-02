@@ -4,20 +4,19 @@
  * puts2 - prints every other character of a string
  * @str: the string to be treated
  *
- * Return: void
+ * Return: always 0
  */
 
 void puts2(char *str)
 {
-int i;
 int j = 0;
 while (str[j] != '\0')
 {
-j++;
-}
-for (i = 0; i < j; i += 2)
+if (j % 2 == 0)
 {
-_putchar(str[1]);
+_putchar(str[j]);
+}
+j++;
 }
 _putchar('\n');
 }
