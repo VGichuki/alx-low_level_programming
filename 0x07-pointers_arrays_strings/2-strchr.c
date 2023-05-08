@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * strchr - entry point
+ * _strchr - entry point
  * @s: input
  * @c: input
  *
