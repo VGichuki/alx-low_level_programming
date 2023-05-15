@@ -12,5 +12,6 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 void print_tab(char **tab);
 int _putchar(char c);
+int main(void);
 
 #endif /* MAIN_H */
