@@ -3,11 +3,13 @@
 #include <stdarg.h>
 
 /**
- * prints_strings - prints strings
- * @separator: a string that is used to separate strings
- * @n: number of unnamed parameters
+ * print_strings - prints strings
+ * @separator: string to be printed
+ * @n: number of strings
+ * @...: variable number of strings to be printed
  *
- * Return: Always 0
+ * Description: If separator is NULL, it is not printed.
+ * If one of the strings if NULL, (nil) is printed instead.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -19,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(strings, n);
 
 	for (index = 0; index < n; index++)
-	{
+{
 	str = va_arg(strings, char *);
 
 	if (str == NULL)
@@ -29,8 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	if (index != (n - 1) && separator != NULL)
 	printf("%s", separator);
-	}
-
+}
 	printf("\n");
 
 	va_end(strings);
