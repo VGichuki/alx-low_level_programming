@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 const listint_t **_r(const listint_t **list, size_t size, const listint_t *new);
 size_t print_listint_safe(const listint_t *head);
